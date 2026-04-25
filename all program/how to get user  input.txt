@@ -1,0 +1,10 @@
+// let username;
+// username = window.prompt(`what is your name`);
+
+
+
+let username;
+document.getElementById(`mysubmit`).onclick = function(){
+    username = document.getElementById(`myText`).value;
+    document.getElementById(`myH1`).textContent = `Hello ${username}`;
+}

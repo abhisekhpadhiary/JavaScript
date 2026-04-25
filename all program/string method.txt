@@ -1,0 +1,23 @@
+let username = "Abhisekh";
+
+username.charAt(0);//return the carecter whic is present in that place 
+username.indexOf("b");//return the 1st appearance of the leter
+username.lastIndexOf("e");
+username.length;
+
+let username1 = "   Abhisekh";
+
+username1 = username1.trim();//return the string with remuving the space from end or 1st 
+username1.toUpperCase();
+username.repeat(3);//repit the string
+username1.startsWith(" ");//return bulian 
+username1.endsWith(" ");
+username1.includes(" ");
+
+let pno = "123-456-789";
+
+pno = pno.replaceAll("-","");//replace the carecter
+
+pno = pno.padStart(15, "0");
+pno = pno.padEnd(15, "0");
+
