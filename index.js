@@ -1,17 +1,6 @@
-// let username = "";
-
-// while(username === ""){
-//     username = window.prompt(`enter your name `);
-// }
-// window.alert("Hii " + username);
-
-// do{
-//     username = window.prompt(`enter your name `);
-// }while(username === "")
-// window.alert("Hii " + username);
-
-//we can use break and continue
-
-for(let i = 0; i <= 2; i++){
-    window.alert("Hii");
+function add(x, y){
+    return x+y ;
 }
+
+console.log(add(55, 25));
+
