@@ -1,0 +1,42 @@
+
+    // <input type="checkbox" id="myCheckBox">
+    // <label for="myCheckBox">subscribe</label> <br>
+
+    // <input type="radio" id="visaBtn" name="card">
+    // <label for="visaBtn">Visa</label><br>
+    // <input type="radio" id="MasterCardBtn" name="card">
+    // <label for="MastercardBtn">Mastercard</label><br>
+    // <input type="radio" id="payPalBtn" name="card">
+    // <label for="payPalBtn">payPal</label><br>
+    // <button type="submit" id="mySubmitBtn">Submit</button>
+
+    // <p id="subResult"></p>
+    // <p id="paymentResult"></p>
+
+let myCheckBox = document.getElementById("myCheckBox");
+let visaBtn = document.getElementById("visaBtn");
+let MastercardBtn = document.getElementById("MasterCardBtn");
+let payPalBtn = document.getElementById("payPalBtn");
+let mySubmitBtn = document.getElementById("mySubmitBtn");
+let subResult = document.getElementById("subResult");
+let paymentResult = document.getElementById("paymentResult");
+
+mySubmitBtn.onclick = function(){
+    if(myCheckBox.checked){
+        subResult.textContent = `subscribed`;
+    }
+    else{
+        subResult.textContent = `not subscribed`;
+    }
+    
+    if(visaBtn.checked){
+        paymentResult.textContent = `you want to pay by visa`;
+    }
+    else if(MastercardBtn.checked){
+        paymentResult.textContent = `pay by master card`;
+    }
+    else if(payPalBtn.checked){
+        paymentResult.textContent = `pay by paypal`;
+    }
+
+}
