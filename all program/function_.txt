@@ -4,3 +4,12 @@ function add(x, y){
 
 console.log(add(55, 25));
 
+
+var powerLevel = 9000; 
+
+function checkPower() {
+    let powerLevel = 10;
+    
+    console.log(powerLevel);            // 10
+    console.log(globalThis.powerLevel); // 9000
+}
